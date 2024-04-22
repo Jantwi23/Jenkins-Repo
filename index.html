@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+     <!-- Favicons -->
+  <link href="b.png" rel="icon">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000000;
+    align-items: center; /* Center the buttons vertically */
+    justify-content: center; /* Center the buttons horizontally */
+}
+    
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #ffffff;
+}
+.img {align-items: left;}
+
+fieldset {
+    border: none;
+    background-color: #444444;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+hr {
+    border: white;
+    margin: 5px;
+}
+
+
+
+.input-grid {
+    display: table-row;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adjust gap between buttons */
+    padding: 50px;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+
+
+.textview {
+    width: calc(100% - 40px);
+    height: 60px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 28px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    color: #000000;
+    border: white;
+    background-color: #ff9100;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+ 
+}
+
+input[type="button"]:hover {
+    background-color: #0091ffce;
+}
+
+input[type="button"]:active {
+    background-color: #c2c2c7;
+}
+
+
+.input-grid button {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+}
+    </style>
+
+    <title>Jantwis Calculator</title>
+</head>
+
+<body>
+    <h1>Jantwis Calculator</h1>
+    <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/Untitled design.png" class="img-fluid" alt="">
+          </div>
+    
+    <hr>
+    <hr>
+    <fieldset>
+        <form name="form">
+            <hr>
+            <input class="textview" name="display">
+
+            <hr>
+            <table class="panel">
+                <tr class="1">
+                    <td><input type="button" value="AC" onclick="form.display.value=''"></td>
+                    <td><input type="button" value="C" onclick="form.display.value=''"></td>
+                    <td><input type="button" value="%" onclick="form.display.value+='%'"></td>
+                    <td><input type="button" value="/" onclick="form.display.value+='/'"></td>
+                </tr>
+                </tr>
+                <tr class="2">
+                    <td><input type="button" value="7" onclick="form.display.value+='7'"></td>
+                    <td><input type="button" value="8" onclick="form.display.value+='8'"></td>
+                    <td><input type="button" value="9" onclick="form.display.value+='9'"></td>
+                    <td><input type="button" value="*" onclick="form.display.value+='*'"></td>
+                </tr>
+
+                <tr class="3">
+                    <td><input type="button" value="4" onclick="form.display.value+='4'"></td>
+                    <td><input type="button" value="5" onclick="form.display.value+='5'"></td>
+                    <td><input type="button" value="6" onclick="form.display.value+='6'"></td>
+                    <td><input type="button" value="-" onclick="form.display.value+='-'"></td>
+                </tr>
+
+                <tr class="4">
+                    <td><input type="button" value="1" onclick="form.display.value+='1'"></td>
+                    <td><input type="button" value="2" onclick="form.display.value+='2'"></td>
+                    <td><input type="button" value="3" onclick="form.display.value+='3'"></td>
+                    <td><input type="button" value="+" onclick="form.display.value+='+'"></td>
+                </tr>
+
+                <tr class="5">
+                    <td><input type="button" value="+/-" onclick="form.display.value= -(form.display.value)"></td>
+                    <td><input type="button" value="0" onclick="form.display.value+='0'"></td>
+                    <td><input type="button" value="." onclick="form.display.value+='.'"></td>
+                    <td><input type="button" value="=" onclick="form.display.value=eval(form.display.value)"></td>
+                </tr>
+
+            </table>
+        </form>
+
+
+    </fieldset>
+   
+</body>
+
+</html>
