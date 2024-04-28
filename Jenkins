@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+    
+    environment {
+        DOCKERHUB_REPO = 'jantwi23/jenkins-docker'
+        DOCKERHUB_CREDS = credentials('Dockerhub-si-id')
+        
+        
+    }
+
+    stages {
+        stage('Retrieve from Github') {
+            steps {
+                echo 'Fetch the code from GitHub'
+                git branch: 'main', credentialsId: 'github-cred-id', url: 'https://github.com/Jantwi23/Jenkins-Repo'
+            }
+        }
+        
+        stage('Build Docker Image') {
+            steps {
+                echo 'Build our docker image'
+                sh "docker build -t ${DOCKERHUB_REPO}:v${BUILD_NUMBER} ."
+            }
+        }
+        
+        stage('Authenticating to DockerHub') {
+            steps {
+                echo 'Authenticating to DockerHub'
+                sh 'docker login -u ${DOCKERHUB_CREDS_USR} -p ${DOCKERHUB_CREDS_PSW}'
+            }
+        }
+        
+        stage('Deploy to DockerHub') {
+            steps {
+                echo 'Deploy the container image to DockerHub'
+                sh "docker push $DOCKERHUB_REPO:v${BUILD_NUMBER}"
+                
+                echo "Image $DOCKERHUB_REPO:v${BUILD_NUMBER} was deployed successfully!"
+            }
+        }
+    }
+}
