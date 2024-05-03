@@ -41,7 +41,7 @@ Customize the deployment process to fit your specific requirements by modifying:
 - Dockerfile configurations
 - Deployment strategies
 
-Refer to the [Customization Guide]([docs/customization.md](https://www.jenkins.io/doc/book/pipeline/)) for detailed instructions on adapting the pipeline to your needs.
+Refer to the [Jenkins Documentation]([docs/customization.md](https://www.jenkins.io/doc/book/pipeline/)) for detailed instructions on adapting the pipeline to your needs.
 
 
 
@@ -53,7 +53,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact Information
 
-For questions, feedback, or support requests, please contact [maintainer@example.com](mailto:joel.p.antwi@gmail.com).
+For questions, feedback, or support requests, please contact [(mailto:joel.p.antwi@gmail.com](mailto:joel.p.antwi@gmail.com).
 
 ---
 
