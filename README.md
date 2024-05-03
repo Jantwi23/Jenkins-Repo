@@ -53,7 +53,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact Information
 
-For questions, feedback, or support requests, please contact [(mailto:joel.p.antwi@gmail.com](mailto:joel.p.antwi@gmail.com).
+For questions, feedback, or support requests, please contact [(mailto:joel.p.antwi@gmail.com](joel.p.antwi@gmail.com).
 
 ---
 
