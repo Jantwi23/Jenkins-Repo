@@ -34,7 +34,6 @@ To deploy a Docker image using the Jenkins pipeline:
 2. Jenkins will automatically trigger the pipeline, initiating the deployment process.
 3. Monitor the pipeline's progress in the Jenkins dashboard and review any logs or notifications for updates.
 
-For examples and additional usage scenarios, refer to the [Usage Guide](docs/usage.md).
 
 ## Customization
 
@@ -44,27 +43,19 @@ Customize the deployment process to fit your specific requirements by modifying:
 - Dockerfile configurations
 - Deployment strategies
 
-Refer to the [Customization Guide](docs/customization.md) for detailed instructions on adapting the pipeline to your needs.
+Refer to the [Customization Guide]([docs/customization.md](https://www.jenkins.io/doc/book/pipeline/)) for detailed instructions on adapting the pipeline to your needs.
 
-## Troubleshooting
 
-Encountering issues? Refer to the [Troubleshooting Guide](docs/troubleshooting.md) for common problems and solutions.
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to this project, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Credits
 
-- Special thanks to the contributors who have helped improve this project.
 
 ## Contact Information
 
-For questions, feedback, or support requests, please contact [maintainer@example.com](mailto:maintainer@example.com).
+For questions, feedback, or support requests, please contact [maintainer@example.com](mailto:joel.p.antwi@gmail.com).
 
 ---
 
