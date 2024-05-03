@@ -24,8 +24,6 @@ To set up the Jenkins pipeline for deploying Docker images, follow these steps:
 
 6. **Trigger Deployment**: Trigger the deployment process manually or automatically based on your preferred criteria.
 
-For detailed instructions and troubleshooting tips, refer to the [Setup Guide](docs/setup.md).
-
 ## Usage
 
 To deploy a Docker image using the Jenkins pipeline:
